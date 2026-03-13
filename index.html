@@ -2,26 +2,26 @@
 <html lang="es">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
   <!-- ─── FAVICON RUTA ABSOLUTA ─── -->
-  <link rel="icon" type="image/png" href="https://panchopistolas12.github.io/autoRancagua/images/favicon.png" />
-  <link rel="apple-touch-icon" href="https://panchopistolas12.github.io/autoRancagua/images/favicon.png" />
+<link rel="icon" type="image/png" href="https://TU-DOMINIO.cl/images/favicon.png" />
+<link rel="apple-touch-icon" href="https://TU-DOMINIO.cl/images/favicon.png" />
 
-  <!-- ─── WHATSAPP / OPEN GRAPH PREVIEW ─── -->
-  <meta property="og:type"         content="website" />
-  <meta property="og:url"          content="https://panchopistolas12.github.io/autoRancagua/" />
-  <meta property="og:title"        content="SCAuto · Servicio Técnico Automotriz en Rancagua" />
-  <meta property="og:description"  content="Scanner, mantención, mecánica general y diagnóstico eléctrico. Técnicos certificados en Av. Baquedano 2028, Rancagua. ¡Agenda tu cita!" />
-  <meta property="og:image"        content="https://panchopistolas12.github.io/autoRancagua/images/favicon.png" />
-  <meta property="og:image:width"  content="400" />
-  <meta property="og:image:height" content="400" />
-  <meta property="og:locale"       content="es_CL" />
+<!-- ─── WHATSAPP / OPEN GRAPH PREVIEW ─── -->
+<meta property="og:type"        content="website" />
+<meta property="og:url"         content="https://TU-DOMINIO.cl/" />
+<meta property="og:title"       content="SCAuto · Servicio Técnico Automotriz en Rancagua" />
+<meta property="og:description" content="Scanner, mantención, mecánica general y diagnóstico eléctrico. Técnicos certificados en Av. Baquedano 2028, Rancagua. ¡Agenda tu cita!" />
+<meta property="og:image"       content="https://TU-DOMINIO.cl/images/favicon.png" />
+<meta property="og:image:width"  content="400" />
+<meta property="og:image:height" content="400" />
+<meta property="og:locale"      content="es_CL" />
 
-  <!-- ─── TÍTULO Y DESCRIPCIÓN SEO ─── -->
-  <title>SCAuto · Servicio Técnico Automotriz Rancagua</title>
-  <meta name="description" content="Scanner automotriz, mantención por pauta, frenos, suspensión y diagnóstico eléctrico en Rancagua. 5.0 estrellas en Google. Llámanos al +56 9 3726 8328." />
-
+<!-- ─── TÍTULO Y DESCRIPCIÓN SEO ─── -->
+<title>SCAuto · Servicio Técnico Automotriz Rancagua</title>
+<meta name="description" content="Scanner automotriz, mantención por pauta, frenos, suspensión y diagnóstico eléctrico en Rancagua. 5.0 ⭐ en Google. Llámanos al +56 9 3726 8328." />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+ 
+  <link rel="icon" type="image/png" href="images/favicon.png" />
   <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@400;600;700;800;900&family=Barlow:wght@300;400;500;600&display=swap" rel="stylesheet" />
   <style>
     *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
@@ -50,6 +50,7 @@
       overflow-x: hidden;
     }
 
+    /* ─── NOISE OVERLAY ─── */
     body::before {
       content: '';
       position: fixed; inset: 0;
@@ -59,10 +60,12 @@
       opacity: 0.5;
     }
 
+    /* ─── SCROLLBAR ─── */
     ::-webkit-scrollbar { width: 6px; }
     ::-webkit-scrollbar-track { background: var(--dark2); }
     ::-webkit-scrollbar-thumb { background: var(--teal); border-radius: 3px; }
 
+    /* ─── NAVBAR ─── */
     nav {
       position: fixed; top: 0; left: 0; right: 0;
       z-index: 100;
@@ -120,6 +123,7 @@
     }
     .nav-cta:hover { background: var(--orange2) !important; color: var(--white) !important; }
 
+    /* ─── HERO ─── */
     #hero {
       min-height: 100vh;
       display: grid; place-items: center;
@@ -253,7 +257,10 @@
       margin-top: 4px;
     }
 
-    section { padding: 100px 5%; }
+    /* ─── SECTIONS ─── */
+    section {
+      padding: 100px 5%;
+    }
     .section-label {
       font-family: var(--font-head);
       font-weight: 700;
@@ -287,6 +294,7 @@
       margin-bottom: 24px;
     }
 
+    /* ─── SERVICES ─── */
     #servicios { background: var(--dark2); }
     .services-grid {
       display: grid;
@@ -334,8 +342,13 @@
       margin-bottom: 10px;
       color: var(--white);
     }
-    .service-card p { font-size: 14px; color: var(--gray); line-height: 1.65; }
+    .service-card p {
+      font-size: 14px;
+      color: var(--gray);
+      line-height: 1.65;
+    }
 
+    /* ─── GALLERY ─── */
     #galeria { background: var(--dark); }
     .gallery-grid {
       display: grid;
@@ -350,8 +363,15 @@
       cursor: pointer;
       border: 1px solid rgba(0,200,232,0.1);
     }
-    .gallery-item:first-child { grid-column: span 2; grid-row: span 1; }
-    .gallery-item img { width: 100%; height: 100%; object-fit: cover; transition: transform .4s; }
+    .gallery-item:first-child {
+      grid-column: span 2;
+      grid-row: span 1;
+    }
+    .gallery-item img {
+      width: 100%; height: 100%;
+      object-fit: cover;
+      transition: transform .4s;
+    }
     .gallery-item:hover img { transform: scale(1.05); }
     .gallery-overlay {
       position: absolute; inset: 0;
@@ -375,8 +395,14 @@
       border: 1px solid rgba(0,200,232,0.3);
     }
 
+    /* ─── WHY US ─── */
     #nosotros { background: var(--dark2); }
-    .why-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 60px; align-items: center; }
+    .why-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 60px;
+      align-items: center;
+    }
     .why-list { display: flex; flex-direction: column; gap: 24px; }
     .why-item {
       display: flex; gap: 20px;
@@ -396,8 +422,16 @@
       flex-shrink: 0;
       width: 48px;
     }
-    .why-item h4 { font-family: var(--font-head); font-weight: 800; font-size: 18px; margin-bottom: 6px; }
+    .why-item h4 {
+      font-family: var(--font-head);
+      font-weight: 800;
+      font-size: 18px;
+      margin-bottom: 6px;
+    }
     .why-item p { font-size: 14px; color: var(--gray); line-height: 1.65; }
+    .why-visual {
+      position: relative;
+    }
     .why-big-card {
       background: var(--dark3);
       border: 1px solid rgba(0,200,232,0.15);
@@ -405,11 +439,31 @@
       padding: 50px 40px;
       text-align: center;
     }
-    .rating-stars { font-size: 28px; margin-bottom: 12px; color: #FFB800; letter-spacing: 2px; }
-    .rating-num { font-family: var(--font-head); font-weight: 900; font-size: 72px; color: var(--teal); line-height: 1; }
-    .rating-label { font-size: 14px; color: var(--gray); margin-top: 4px; }
-    .rating-divider { width: 40px; height: 2px; background: var(--orange); margin: 24px auto; }
-    .reviews-mini { display: flex; flex-direction: column; gap: 14px; margin-top: 28px; }
+    .rating-stars {
+      font-size: 32px;
+      margin-bottom: 12px;
+    }
+    .rating-num {
+      font-family: var(--font-head);
+      font-weight: 900;
+      font-size: 72px;
+      color: var(--teal);
+      line-height: 1;
+    }
+    .rating-label {
+      font-size: 14px;
+      color: var(--gray);
+      margin-top: 4px;
+    }
+    .rating-divider {
+      width: 40px; height: 2px;
+      background: var(--orange);
+      margin: 24px auto;
+    }
+    .reviews-mini {
+      display: flex; flex-direction: column; gap: 14px;
+      margin-top: 28px;
+    }
     .review-mini {
       background: rgba(0,200,232,0.05);
       border: 1px solid rgba(0,200,232,0.1);
@@ -419,9 +473,19 @@
     }
     .review-mini-stars { color: #FFB800; font-size: 13px; margin-bottom: 4px; }
     .review-mini-text { font-size: 13px; color: var(--gray); font-style: italic; }
-    .review-mini-author { font-size: 12px; font-weight: 600; color: var(--teal); margin-top: 6px; }
+    .review-mini-author {
+      font-size: 12px;
+      font-weight: 600;
+      color: var(--teal);
+      margin-top: 6px;
+    }
 
-    #contacto { background: var(--dark); position: relative; overflow: hidden; }
+    /* ─── CONTACT ─── */
+    #contacto {
+      background: var(--dark);
+      position: relative;
+      overflow: hidden;
+    }
     #contacto::before {
       content: '';
       position: absolute;
@@ -430,9 +494,16 @@
       background: radial-gradient(circle, rgba(255,107,0,0.07) 0%, transparent 70%);
       pointer-events: none;
     }
-    .contact-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 60px; align-items: start; }
+    .contact-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 60px;
+      align-items: start;
+    }
     .contact-info { display: flex; flex-direction: column; gap: 24px; }
-    .contact-item { display: flex; gap: 18px; align-items: flex-start; }
+    .contact-item {
+      display: flex; gap: 18px; align-items: flex-start;
+    }
     .contact-icon {
       width: 48px; height: 48px;
       background: rgba(0,200,232,0.1);
@@ -451,7 +522,12 @@
       color: var(--gray);
       margin-bottom: 4px;
     }
-    .contact-item a, .contact-item p { font-size: 17px; font-weight: 500; color: var(--white); text-decoration: none; }
+    .contact-item a, .contact-item p {
+      font-size: 17px;
+      font-weight: 500;
+      color: var(--white);
+      text-decoration: none;
+    }
     .contact-item a:hover { color: var(--teal); }
     .wa-btn {
       display: inline-flex; align-items: center; gap: 12px;
@@ -474,7 +550,13 @@
       border-radius: 12px;
       padding: 36px;
     }
-    .hours-card h3 { font-family: var(--font-head); font-weight: 800; font-size: 22px; margin-bottom: 24px; color: var(--white); }
+    .hours-card h3 {
+      font-family: var(--font-head);
+      font-weight: 800;
+      font-size: 22px;
+      margin-bottom: 24px;
+      color: var(--white);
+    }
     .hours-row {
       display: flex; justify-content: space-between;
       align-items: center;
@@ -506,15 +588,7 @@
       animation: pulse 2s infinite;
     }
 
-    .map-wrapper {
-      margin-top: 40px;
-      border-radius: 12px;
-      overflow: hidden;
-      border: 1px solid rgba(0,200,232,0.15);
-      box-shadow: 0 8px 40px rgba(0,0,0,0.3);
-    }
-    .map-wrapper iframe { display: block; }
-
+    /* ─── FOOTER ─── */
     footer {
       background: var(--dark2);
       border-top: 1px solid rgba(0,200,232,0.1);
@@ -525,13 +599,29 @@
       flex-wrap: wrap;
       gap: 24px;
     }
-    .footer-brand { font-family: var(--font-head); font-weight: 900; font-size: 22px; letter-spacing: 1px; }
+    .footer-brand {
+      font-family: var(--font-head);
+      font-weight: 900;
+      font-size: 22px;
+      letter-spacing: 1px;
+    }
     .footer-brand span { color: var(--teal); }
-    .footer-copy { font-size: 13px; color: var(--gray); }
-    .footer-links { display: flex; gap: 24px; }
-    .footer-links a { color: var(--gray); text-decoration: none; font-size: 13px; transition: color .2s; }
+    .footer-copy {
+      font-size: 13px;
+      color: var(--gray);
+    }
+    .footer-links {
+      display: flex; gap: 24px;
+    }
+    .footer-links a {
+      color: var(--gray);
+      text-decoration: none;
+      font-size: 13px;
+      transition: color .2s;
+    }
     .footer-links a:hover { color: var(--teal); }
 
+    /* ─── ANIMATIONS ─── */
     @keyframes fadeUp {
       from { opacity: 0; transform: translateY(30px); }
       to   { opacity: 1; transform: translateY(0); }
@@ -540,9 +630,13 @@
       from { opacity: 0; transform: translateX(30px); }
       to   { opacity: 1; transform: translateX(0); }
     }
-    .reveal { opacity: 0; transform: translateY(24px); transition: opacity .6s ease, transform .6s ease; }
+    .reveal {
+      opacity: 0; transform: translateY(24px);
+      transition: opacity .6s ease, transform .6s ease;
+    }
     .reveal.visible { opacity: 1; transform: none; }
 
+    /* ─── FLOATING WHATSAPP ─── */
     .floating-wa {
       position: fixed; bottom: 28px; right: 28px;
       z-index: 200;
@@ -557,12 +651,161 @@
     .floating-wa:hover { transform: scale(1.12); }
     .floating-wa svg { width: 30px; height: 30px; fill: #fff; }
 
+    /* ─── HAMBURGER BUTTON ─── */
+    .nav-right {
+      display: none;
+      align-items: center;
+      gap: 12px;
+    }
+    .nav-contact-btn {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      background: var(--orange);
+      color: var(--white);
+      text-decoration: none;
+      padding: 9px 18px;
+      border-radius: 4px;
+      font-family: var(--font-head);
+      font-weight: 700;
+      font-size: 13px;
+      letter-spacing: 1px;
+      text-transform: uppercase;
+      transition: background .2s;
+      white-space: nowrap;
+    }
+    .nav-contact-btn:hover { background: var(--orange2); }
+
+    .hamburger {
+      display: none;
+      flex-direction: column;
+      justify-content: center;
+      gap: 5px;
+      width: 42px;
+      height: 42px;
+      background: rgba(0,200,232,0.1);
+      border: 1px solid rgba(0,200,232,0.25);
+      border-radius: 8px;
+      cursor: pointer;
+      padding: 0 10px;
+      transition: background .2s;
+      flex-shrink: 0;
+    }
+    .hamburger:hover { background: rgba(0,200,232,0.2); }
+    .hamburger span {
+      display: block;
+      height: 2px;
+      background: var(--teal);
+      border-radius: 2px;
+      transition: transform .3s, opacity .3s;
+      transform-origin: center;
+    }
+    .hamburger.open span:nth-child(1) { transform: translateY(7px) rotate(45deg); }
+    .hamburger.open span:nth-child(2) { opacity: 0; }
+    .hamburger.open span:nth-child(3) { transform: translateY(-7px) rotate(-45deg); }
+
+    /* ─── MOBILE MENU OVERLAY ─── */
+    .mobile-menu {
+      display: none;
+      position: fixed;
+      top: 70px; left: 0; right: 0;
+      z-index: 99;
+      background: rgba(8, 13, 26, 0.98);
+      backdrop-filter: blur(20px);
+      border-bottom: 1px solid rgba(0,200,232,0.2);
+      padding: 0;
+      overflow: hidden;
+      max-height: 0;
+      transition: max-height .4s ease, padding .3s ease;
+    }
+    .mobile-menu.open {
+      display: block;
+      max-height: 500px;
+      padding: 20px 0 28px;
+    }
+    .mobile-menu ul {
+      list-style: none;
+      display: flex;
+      flex-direction: column;
+    }
+    .mobile-menu ul li a {
+      display: flex;
+      align-items: center;
+      gap: 14px;
+      padding: 16px 28px;
+      text-decoration: none;
+      font-family: var(--font-head);
+      font-weight: 700;
+      font-size: 18px;
+      letter-spacing: 1.5px;
+      text-transform: uppercase;
+      color: var(--gray);
+      border-bottom: 1px solid rgba(255,255,255,0.04);
+      transition: color .2s, background .2s;
+    }
+    .mobile-menu ul li a:hover,
+    .mobile-menu ul li a.active-link {
+      color: var(--teal);
+      background: rgba(0,200,232,0.05);
+    }
+    .mobile-menu ul li a .menu-icon {
+      font-size: 18px;
+      width: 24px;
+      text-align: center;
+    }
+    .mobile-menu-footer {
+      padding: 20px 28px 0;
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+    }
+    .mobile-wa-btn {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 10px;
+      background: #25D366;
+      color: #fff;
+      text-decoration: none;
+      padding: 16px;
+      border-radius: 8px;
+      font-family: var(--font-head);
+      font-weight: 700;
+      font-size: 16px;
+      letter-spacing: 0.5px;
+      transition: background .2s;
+    }
+    .mobile-wa-btn:hover { background: #1db954; }
+    .mobile-contact-btn {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 10px;
+      background: var(--orange);
+      color: var(--white);
+      text-decoration: none;
+      padding: 16px;
+      border-radius: 8px;
+      font-family: var(--font-head);
+      font-weight: 700;
+      font-size: 16px;
+      letter-spacing: 0.5px;
+      transition: background .2s;
+    }
+    .mobile-contact-btn:hover { background: var(--orange2); }
+
+    /* ─── RESPONSIVE ─── */
     @media (max-width: 900px) {
       .hero-stats { display: none; }
-      .gallery-grid { grid-template-columns: 1fr 1fr; grid-template-rows: auto; }
+      .gallery-grid {
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: auto;
+      }
       .gallery-item:first-child { grid-column: span 2; }
       .why-grid, .contact-grid { grid-template-columns: 1fr; }
       nav .nav-links { display: none; }
+      .nav-right { display: flex; }
+      .hamburger { display: flex; }
     }
     @media (max-width: 600px) {
       .gallery-grid { grid-template-columns: 1fr; }
@@ -573,6 +816,7 @@
 </head>
 <body>
 
+  <!-- NAVBAR -->
   <nav>
     <a href="#hero" class="nav-logo">
       <div class="nav-logo-icon">
@@ -586,8 +830,36 @@
       <li><a href="#nosotros">Nosotros</a></li>
       <li><a href="#contacto" class="nav-cta">Contacto</a></li>
     </ul>
+    <div class="nav-right">
+      <a href="#contacto" class="nav-contact-btn" onclick="closeMobileMenu()">📞 Contacto</a>
+      <button class="hamburger" id="hamburger" aria-label="Menú" onclick="toggleMenu()">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
   </nav>
 
+  <!-- MOBILE MENU -->
+  <div class="mobile-menu" id="mobileMenu">
+    <ul>
+      <li><a href="#servicios" onclick="closeMobileMenu()"><span class="menu-icon">🔧</span> Servicios</a></li>
+      <li><a href="#galeria" onclick="closeMobileMenu()"><span class="menu-icon">📷</span> Galería</a></li>
+      <li><a href="#nosotros" onclick="closeMobileMenu()"><span class="menu-icon">⭐</span> Nosotros</a></li>
+      <li><a href="#contacto" onclick="closeMobileMenu()"><span class="menu-icon">📍</span> Contacto</a></li>
+    </ul>
+    <div class="mobile-menu-footer">
+      <a href="https://wa.me/56937268328?text=Hola%2C%20me%20gustar%C3%ADa%20agendar%20una%20cita" target="_blank" class="mobile-wa-btn" onclick="closeMobileMenu()">
+        <svg viewBox="0 0 24 24" fill="white" width="20" height="20"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+        WhatsApp
+      </a>
+      <a href="#contacto" class="mobile-contact-btn" onclick="closeMobileMenu()">
+        📞 Agendar Cita
+      </a>
+    </div>
+  </div>
+
+  <!-- HERO -->
   <section id="hero">
     <div class="hero-bg"></div>
     <div class="hero-grid-lines"></div>
@@ -603,7 +875,7 @@
       </p>
       <div class="hero-actions">
         <a href="https://wa.me/56937268328" target="_blank" class="btn-primary">
-          Agendar cita ahora
+          📲 Agendar cita ahora
         </a>
         <a href="#servicios" class="btn-secondary">
           Ver servicios →
@@ -626,6 +898,7 @@
     </div>
   </section>
 
+  <!-- SERVICES -->
   <section id="servicios">
     <div class="reveal">
       <div class="section-label">Lo que ofrecemos</div>
@@ -635,38 +908,39 @@
     </div>
     <div class="services-grid reveal">
       <div class="service-card">
-        <div class="service-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="26" height="26"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg></div>
+        <div class="service-icon">🔍</div>
         <h3>Scanner Automotriz</h3>
         <p>Lectura y borrado de códigos DTC, datos en tiempo real, reseteo de servicio de aceite, regeneración DPF, calibración cuerpo de aceleración y más.</p>
       </div>
       <div class="service-card">
-        <div class="service-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="26" height="26"><path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"/></svg></div>
+        <div class="service-icon">🔧</div>
         <h3>Mantención por Pauta</h3>
         <p>Servicio guiado según las recomendaciones del fabricante de tu vehículo. Cambio de aceite, filtros, líquidos y revisión completa.</p>
       </div>
       <div class="service-card">
-        <div class="service-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="26" height="26"><circle cx="12" cy="12" r="3"/><path d="M19.07 4.93a10 10 0 0 1 0 14.14M4.93 4.93a10 10 0 0 0 0 14.14"/><path d="M12 2v2m0 16v2M2 12h2m16 0h2"/></svg></div>
+        <div class="service-icon">⚙️</div>
         <h3>Mecánica General</h3>
         <p>Frenos, suspensión, dirección, alternador, motor de arranque, distribución, kit de embrague, rodamientos y más.</p>
       </div>
       <div class="service-card">
-        <div class="service-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="26" height="26"><polyline points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"/></svg></div>
+        <div class="service-icon">⚡</div>
         <h3>Diagnóstico Eléctrico</h3>
         <p>Revisión de circuitos, fusibles, conectores y ampolletas. Diagnóstico de consumo eléctrico y verificación de componentes.</p>
       </div>
       <div class="service-card">
-        <div class="service-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="26" height="26"><circle cx="12" cy="12" r="10"/><circle cx="12" cy="12" r="4"/><line x1="12" y1="2" x2="12" y2="8"/><line x1="12" y1="16" x2="12" y2="22"/><line x1="2" y1="12" x2="8" y2="12"/><line x1="16" y1="12" x2="22" y2="12"/></svg></div>
-        <h3>Frenos &amp; Suspensión</h3>
+        <div class="service-icon">🛑</div>
+        <h3>Frenos & Suspensión</h3>
         <p>Revisión y cambio de pastillas, discos, amortiguadores y sistema completo de frenos y suspensión delantera y trasera.</p>
       </div>
       <div class="service-card">
-        <div class="service-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="26" height="26"><path d="M12 22s-8-4.5-8-11.8A8 8 0 0 1 12 2a8 8 0 0 1 8 8.2c0 7.3-8 11.8-8 11.8z"/><circle cx="12" cy="10" r="3"/></svg></div>
+        <div class="service-icon">📡</div>
         <h3>GPS · Alarma · Cierre</h3>
         <p>Instalación profesional de GPS, inmovilizador, alarma, cierre centralizado, luces, radio y sistema de sonido.</p>
       </div>
     </div>
   </section>
 
+  <!-- GALLERY -->
   <section id="galeria">
     <div class="reveal">
       <div class="section-label">Nuestros trabajos</div>
@@ -689,7 +963,7 @@
       </div>
       <div class="gallery-item">
         <img src="images/imagen4.png" alt="Instalación GPS y alarma" loading="lazy" />
-        <div class="gallery-overlay"><span class="gallery-tag">GPS &amp; Alarma</span></div>
+        <div class="gallery-overlay"><span class="gallery-tag">GPS & Alarma</span></div>
       </div>
       <div class="gallery-item">
         <img src="images/imagen5.png" alt="Tren delantero suspensión" loading="lazy" />
@@ -702,6 +976,7 @@
     </div>
   </section>
 
+  <!-- WHY US -->
   <section id="nosotros">
     <div class="reveal">
       <div class="section-label">¿Por qué elegirnos?</div>
@@ -741,7 +1016,7 @@
       </div>
       <div class="why-visual">
         <div class="why-big-card">
-          <div class="rating-stars">★★★★★</div>
+          <div class="rating-stars">⭐⭐⭐⭐⭐</div>
           <div class="rating-num">5.0</div>
           <div class="rating-label">Puntuación perfecta en Google</div>
           <div class="rating-divider"></div>
@@ -762,11 +1037,13 @@
               <div class="review-mini-author">— Cliente verificado Google</div>
             </div>
           </div>
+          <span class="hours-open">Abierto ahora</span>
         </div>
       </div>
     </div>
   </section>
 
+  <!-- CONTACT -->
   <section id="contacto">
     <div class="reveal">
       <div class="section-label">Estamos aquí para ayudarte</div>
@@ -777,21 +1054,21 @@
     <div class="contact-grid reveal">
       <div class="contact-info">
         <div class="contact-item">
-          <div class="contact-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="22" height="22"><path d="M12 22s-8-4.5-8-11.8A8 8 0 0 1 12 2a8 8 0 0 1 8 8.2c0 7.3-8 11.8-8 11.8z"/><circle cx="12" cy="10" r="3"/></svg></div>
+          <div class="contact-icon">📍</div>
           <div>
             <h4>Dirección</h4>
             <p>Av. Gral. Baquedano 2028, Rancagua<br>Región de O'Higgins</p>
           </div>
         </div>
         <div class="contact-item">
-          <div class="contact-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="22" height="22"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 12 19.79 19.79 0 0 1 1.61 3.38 2 2 0 0 1 3.6 1.18h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L7.91 8.72a16 16 0 0 0 6.29 6.29l.94-.94a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg></div>
+          <div class="contact-icon">📞</div>
           <div>
             <h4>Teléfono</h4>
             <a href="tel:+56937268328">+56 9 3726 8328</a>
           </div>
         </div>
         <div class="contact-item">
-          <div class="contact-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="22" height="22"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg></div>
+          <div class="contact-icon">📱</div>
           <div>
             <h4>Instagram</h4>
             <a href="https://instagram.com/scauto_servicioautomotriz" target="_blank">@scauto_servicioautomotriz</a>
@@ -805,7 +1082,7 @@
         </a>
       </div>
       <div class="hours-card">
-        <h3>Horario de atención</h3>
+        <h3>⏰ Horario de atención</h3>
         <div class="hours-row">
           <span class="hours-day">Lunes – Viernes</span>
           <span class="hours-time">08:30 – 18:00</span>
@@ -818,9 +1095,11 @@
           <span class="hours-day">Domingo</span>
           <span class="hours-time">Cerrado</span>
         </div>
+        <span class="hours-open">Abierto ahora</span>
+
         <div style="margin-top:36px; padding-top:28px; border-top: 1px solid rgba(255,255,255,0.06);">
           <p style="font-size:13px; color:var(--gray); line-height:1.7;">
-            <strong style="color:var(--white)">Rancagua, sector centro.</strong><br>
+            📌 <strong style="color:var(--white)">Rancagua, sector centro.</strong><br>
             Estacionamiento disponible.<br>
             Atendemos todas las marcas y modelos.<br>
             <span style="color:var(--teal); font-weight:600;">¡Agenda con anticipación!</span>
@@ -828,22 +1107,13 @@
         </div>
       </div>
     </div>
-
-    <!-- MAPA -->
-    <div class="map-wrapper reveal">
-      <iframe
-        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3323.3!2d-70.8459!3d-34.1655!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9664f4b3e1a3b3b3%3A0x0!2sAv.+Gral.+Baquedano+2028%2C+Rancagua!5e0!3m2!1ses!2scl!4v1"
-        width="100%" height="360" style="border:0;" allowfullscreen="" loading="lazy"
-        referrerpolicy="no-referrer-when-downgrade"
-        title="Ubicación SCAuto Rancagua">
-      </iframe>
-    </div>
   </section>
 
+  <!-- FOOTER -->
   <footer>
     <div>
       <div class="footer-brand"><span>SC</span>AUTO · Servicio Técnico Automotriz</div>
-      <div class="footer-copy" style="margin-top:6px;">Rancagua, O'Higgins · Chile</div>
+      <div class="footer-copy" style="margin-top:6px;">Rancagua, O'Higgins · Chile 🇨🇱</div>
     </div>
     <div class="footer-links">
       <a href="#servicios">Servicios</a>
@@ -854,6 +1124,7 @@
     <div class="footer-copy">© 2026 SCAuto · Todos los derechos reservados</div>
   </footer>
 
+  <!-- FLOATING WA BUTTON -->
   <a href="https://wa.me/56937268328?text=Hola%2C%20me%20gustar%C3%ADa%20agendar%20una%20cita" target="_blank" class="floating-wa" title="Contactar por WhatsApp">
     <svg viewBox="0 0 24 24">
       <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/>
@@ -861,6 +1132,33 @@
   </a>
 
   <script>
+    // Hamburger menu
+    function toggleMenu() {
+      const menu = document.getElementById('mobileMenu');
+      const btn = document.getElementById('hamburger');
+      const isOpen = menu.classList.contains('open');
+      if (isOpen) {
+        menu.classList.remove('open');
+        btn.classList.remove('open');
+      } else {
+        menu.classList.add('open');
+        btn.classList.add('open');
+      }
+    }
+    function closeMobileMenu() {
+      document.getElementById('mobileMenu').classList.remove('open');
+      document.getElementById('hamburger').classList.remove('open');
+    }
+    // Close menu on outside click
+    document.addEventListener('click', function(e) {
+      const menu = document.getElementById('mobileMenu');
+      const btn = document.getElementById('hamburger');
+      if (!menu.contains(e.target) && !btn.contains(e.target)) {
+        closeMobileMenu();
+      }
+    });
+
+    // Scroll reveal
     const reveals = document.querySelectorAll('.reveal');
     const io = new IntersectionObserver((entries) => {
       entries.forEach(e => {
@@ -869,6 +1167,7 @@
     }, { threshold: 0.12 });
     reveals.forEach(r => io.observe(r));
 
+    // Smooth nav highlight
     const sections = document.querySelectorAll('section[id]');
     const navLinks = document.querySelectorAll('.nav-links a');
     window.addEventListener('scroll', () => {
@@ -881,6 +1180,7 @@
       });
     });
 
+    // Counter animation
     function animateCount(el, target, suffix='') {
       let start = 0;
       const step = target / 40;
